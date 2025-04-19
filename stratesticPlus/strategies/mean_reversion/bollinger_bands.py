@@ -2,8 +2,8 @@ from collections import OrderedDict
 
 import numpy as np
 
-from stratestic.backtesting.helpers.evaluation import SIDE
-from stratestic.strategies._mixin import StrategyMixin
+from stratesticPlus.backtesting.helpers.evaluation import SIDE
+from stratesticPlus.strategies._mixin import StrategyMixin
 
 
 class BollingerBands(StrategyMixin):

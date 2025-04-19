@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 from ta.trend import MACD
 
-from stratestic.backtesting.helpers.evaluation import SIDE
-from stratestic.strategies._mixin import StrategyMixin
+from stratesticPlus.backtesting.helpers.evaluation import SIDE
+from stratesticPlus.strategies._mixin import StrategyMixin
 
 
 class MovingAverageConvergenceDivergence(MACD, StrategyMixin):

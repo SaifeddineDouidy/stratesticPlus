@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 import time
 import pytz
-from stratestic.backtesting import VectorizedBacktester
+from stratesticPlus.backtesting import VectorizedBacktester
 import logging
 import threading
 import sys
@@ -496,7 +496,7 @@ def get_user_input():
     strategy = None
     strategy_info = {}
     
-    from stratestic.strategies import (
+    from stratesticPlus.strategies import (
         MovingAverageCrossover, BollingerBands,
          MovingAverageConvergenceDivergence
     )

@@ -4,8 +4,8 @@ from typing import Literal
 import numpy as np
 from ta.trend import sma_indicator, ema_indicator
 
-from stratestic.backtesting.helpers.evaluation import SIDE
-from stratestic.strategies._mixin import StrategyMixin
+from stratesticPlus.backtesting.helpers.evaluation import SIDE
+from stratesticPlus.strategies._mixin import StrategyMixin
 
 
 class MovingAverage(StrategyMixin):

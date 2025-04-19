@@ -2,11 +2,11 @@ import numpy as np
 import numba
 from numba import jit
 
-from stratestic.backtesting._mixin import BacktestMixin
-from stratestic.backtesting.helpers import Trade
-from stratestic.backtesting.helpers.evaluation import STRATEGY_RETURNS, STRATEGY_RETURNS_TC, BUY_AND_HOLD, \
+from stratesticPlus.backtesting._mixin import BacktestMixin
+from stratesticPlus.backtesting.helpers import Trade
+from stratesticPlus.backtesting.helpers.evaluation import STRATEGY_RETURNS, STRATEGY_RETURNS_TC, BUY_AND_HOLD, \
     CUM_SUM_STRATEGY_TC, MARGIN_RATIO, SIDE
-from stratestic.backtesting.helpers.margin import (
+from stratesticPlus.backtesting.helpers.margin import (
     get_maintenance_margin,
     calculate_liquidation_price,
     calculate_margin_ratio
@@ -91,7 +91,7 @@ class VectorizedBacktester(BacktestMixin):
         Parameters
         ----------
         strategy : StrategyType
-            A valid strategy class as defined in the 'stratestic.strategies' __init__ file.
+            A valid strategy class as defined in the 'stratesticPlus.strategies' __init__ file.
         symbol : str, optional
             The trading symbol. Default is None.
         amount : float, optional

@@ -1,6 +1,6 @@
 from collections import OrderedDict
-from stratestic.backtesting import VectorizedBacktester
-from stratestic.strategies._mixin import StrategyMixin
+from stratesticPlus.backtesting import VectorizedBacktester
+from stratesticPlus.strategies._mixin import StrategyMixin
 import pandas as pd
 import numpy as np
 

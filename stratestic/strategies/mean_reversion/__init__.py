@@ -1,1 +1,0 @@
-from stratestic.strategies.mean_reversion.bollinger_bands import BollingerBands

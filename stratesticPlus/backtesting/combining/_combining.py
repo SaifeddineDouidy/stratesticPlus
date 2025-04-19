@@ -3,10 +3,10 @@ from typing import Literal
 import numpy as np
 import pandas as pd
 
-from stratestic.backtesting.helpers.evaluation import SIDE
-from stratestic.strategies._mixin import StrategyMixin
-from stratestic.strategies.properties import STRATEGIES
-from stratestic.utils.exceptions import StrategyInvalid, StrategyRequired
+from stratesticPlus.backtesting.helpers.evaluation import SIDE
+from stratesticPlus.strategies._mixin import StrategyMixin
+from stratesticPlus.strategies.properties import STRATEGIES
+from stratesticPlus.utils.exceptions import StrategyInvalid, StrategyRequired
 
 
 strategy_combination_methods = ["Unanimous", "Majority"]
@@ -57,8 +57,8 @@ class StrategyCombiner(StrategyMixin):
 
     Examples:
     ---------
-    >>> from stratestic.strategies import Momentum, MovingAverageCrossover
-    >>> from stratestic.backtesting.combining import StrategyCombiner
+    >>> from stratesticPlus.strategies import Momentum, MovingAverageCrossover
+    >>> from stratesticPlus.backtesting.combining import StrategyCombiner
     >>> strategy1 = Momentum(window=5)
     >>> strategy2 = MovingAverageCrossover(sma_s=10, sma_l=20)
     >>> combiner = StrategyCombiner([strategy1, strategy2], method='Majority')
